@@ -9,8 +9,8 @@
 		background-repeat:no-repeat;
 		background-size:contain;
 		background-position:center;
-		background-attachment:fixed;
-		padding-top:10%;	
+		/*background-attachment:fixed;*/
+		padding-top:30%;
 	}
 	
 	.overlay-text{
@@ -23,7 +23,11 @@
 		font-family: "Comic Sans MS", cursive, sans-serif;
 		font-size:2em;
 		margin:left;
-	    background-color:#CCFFFF;
+	    background-color:#CCFEEE;
+		position: fixed;
+		width:100%;
+		z-index:9999;
+		padding:6px;
 	}
 	
 	/* CSS - Trending Blocks */
@@ -43,30 +47,77 @@
 	
 	/* Main Menu*/
 	#main-menu {
-	    width: 100%%;
-	    height: 100%;
+	    width: 60%;
+	    height: 100px;
     
 	    display: -webkit-flex; /* Safari */
 	    display: flex;
-		text-align:center
+		text-align: center;
+		vertical-align: middle;
+		float: right;
 	}
 
 	#main-menu div {
 	    width: 20%;
-	    height: 20%;
+	    height: 20%;}
+		
+	.nav-container{  background-color: #CCFFCC;/*background-image: url('./menu_background_new.png'); 
+		                 background-size: 120px 90px;*/ 
+		                 width: 100%; 
+						 position: fixed; 
+			             font: 15px arial, sans-serif;
+						 margin-right: 6px; padding: 6px;
+					 }
+		     div a 	{color: #000099;}
+	.f-nav{ z-index: 9990; position: fixed; left: 50%; top: 0; width: 100%;} /* this make our menu fixed top */
+	
+	.nav { height: 42px;}
+			.nav ul { list-style: none; }
+			.nav ul li{float: left; margin-top: 6px; padding: 6px; border-right: 1px solid #ACACAC;}
+			.nav ul li:first-child{ padding-left: 0;}
+			.nav ul li a { }
+			.nav ul li a:hover{ text-decoration: underline;
+			margin-right: 6px; padding: 6px;}
 	
   </style>
+  
+  <!--script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script>
+  jQuery("document").ready(function($){
+	
+  	var nav = $('.nav-container');
+	
+  	$(window).scroll(function () {
+  		if ($(this).scrollTop() > 136) {
+  			nav.addClass("f-nav");
+  		} else {
+  			nav.removeClass("f-nav");
+  		}
+  	});
+  });
+  </script-->
 </head>
 <body>
 	<div class="logo">Graggle
-	</div>
+	</div><br/><br/>
 	<!-- Main Menu -->
-	<div id="main-menu">
+	<!--div id="main-menu">
 	  <div></div>
 	  <div style="background-color:coral;border: 1px solid #c3c3c3;"><a href="http://google.com">Dashboard </a></div>
 	  <div style="background-color:lightblue;border: 1px solid #c3c3c3;"><a href="http://google.com">Create my Graggle</a></div>
 	  <div style="background-color:khaki;border: 1px solid #c3c3c3;"><a href="http://google.com">Support</a></div>
 	  <div></div>
+	</div -->
+	<div class="nav-container">
+	<div class="nav">
+		<ul>
+			<li><a href="">Home</a></li>
+			<li><a href="">DashBoard</a></li>
+			<li><a href="">Trending</a></li>
+			<li><a href=""><a href="http://www.sutanaryan.com/services/">Services</a></a></li>
+		</ul>
+		<div class="clear"></div> 
+	</div>
 	</div>
     
 	<div class="top-div">
