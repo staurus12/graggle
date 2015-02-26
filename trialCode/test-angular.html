@@ -1,0 +1,17 @@
+<html ng-app>
+ <head>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+    <script type="text/javascript" src="index-angular.js"></script>
+ </head>
+ <body ng-controller="graggleController">
+ 	<div>
+		{{totalTrending}}
+	</div>
+	<div>
+		<ul ng-repeat="trending in trendingGraggles">
+			<li>{{trending.name}}</li>
+		</ul>
+	</div>
+
+ </body>
+</html>
