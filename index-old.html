@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html ng-app>
+<html>
 <head>
   <style>
   
@@ -40,17 +40,13 @@
 	    height: 200px;
 	    border: 1px solid #c3c3c3;
 	    display: -webkit-flex; /* Safari */
-	    display: flex;
-			
+	    display: flex;	
 	}
 
 	#trendingBlocks div {
 	    width: 20%;
 	    height: 85%;
 		margin:1%;
-		text-align: center;
-		font: 10px arial, sans-serif;
-		padding: 6px;
 	}
 	
 	/* Main Menu*/
@@ -108,8 +104,7 @@
   });
   </script-->
  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
- <!--script src="./js/angular/angular.js"></script-->
- <script src="./js/index-angular.js"></script>
+ <script src="./js/angular/homepage.js"></script>
 </head>
 <body>
 	<div class="logo">Graggle
@@ -151,22 +146,14 @@
     <div style="background-color:pink;border: 1px solid #c3c3c3;">Trending Graggle</div>
     <div></div>
   </div>
-  
-  <div id="trendingBlocks" ng-controller="graggleController">
-    <div></div>
-    <div style="background-color:coral;border: 1px solid #c3c3c3;">{{trendingGraggles[0].name}}, {{trendingGraggles[0].location}}</div>
-    <div style="background-color:lightblue;border: 1px solid #c3c3c3;">{{trendingGraggles[1].name}}, {{trendingGraggles[1].location}}</div>
-    <div style="background-color:khaki;border: 1px solid #c3c3c3;">{{trendingGraggles[2].name}}, {{trendingGraggles[2].location}}</div>
-    <div style="background-color:pink;border: 1px solid #c3c3c3;">{{trendingGraggles[3].name}} {{trendingGraggles[3].location}}</div>
-    <div></div>
+  <div>
+
   </div>
   
-  <div ng-controller="graggleController">
-	  <ul>
-		 <li ng-repeat="trending in trendingGraggles">
-			 <span>{{trending.name}}</span>
-		 </li>
-	  </ul>
+  <div style="display:block;">
+	  <p>aaaaaaaaaaaaa aaaaaaaaaaaaaaa</p>
+	  <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+	  <p>aaaaaaaaadddd ffffffff ffffff</p>
   </div>
   
 
