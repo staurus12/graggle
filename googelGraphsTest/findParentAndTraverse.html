@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>parent demo</title>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+ 
+<div><p>Hello</p></div>
+<div>
+<div class="selected"><p>Hello Again</p></div>
+ </div>
+<script>
+ var par = $('p');
+ par.click( function(){
+	 $(this).parent( ".selected" ).css( "background", "yellow" );} );
+	 $(this).drilldown;
+//par.parent( ".selected" ).css( "background", "yellow" );
+//$( "p" ).parent( ".selected" ).css( "background", "yellow" );
+</script>
+ 
+</body>
+</html>
